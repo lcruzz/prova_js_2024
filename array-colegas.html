@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegas</title>
+    
+    <style>
+        *{
+            font-family: Arial;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma array com o nome de pelo menor 10 colegas da escola</h1>
+    <p id="colegas"></p>
+    
+    <script>
+        let lista = ["Ivaneudo", "Kelly", "Lígia", "Lívia", "Pamela", "Hugo", "Heloisa", "Diogo Saú", "Ananda", "Antonia"]
+        document.querySelector("#colegas").innerHTML = lista.join("<br> - ")
+
+    </script>
+</body>
+</html>

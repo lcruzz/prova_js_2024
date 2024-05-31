@@ -1,0 +1,32 @@
+*{
+    font-family: Arial;
+}
+
+button{
+    border-radius: 5px;
+    font-style: bold;
+    width: 80px;
+    height: 20px;
+}
+
+#azul:hover{
+    background-color: #26b0ff;
+}
+
+#vermelho:hover{
+    background-color: #ff2626;
+    color: white;
+}
+
+#preto:hover{
+    background-color: #121212;
+    color: white;
+}
+
+#branco:hover{
+    background-color: #c5c5c5;
+}
+
+#amarelo:hover{
+    background-color: #ecff43;
+}

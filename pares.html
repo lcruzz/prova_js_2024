@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pares</title>
+    
+    <style>
+        *{
+            font-family: Arial;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Números pares de 1 ate 100!</h1>
+    <p id="pares"></p>
+    
+    <script>
+        let contador = 0
+        let lista = [""]
+        while (contador <= 100){
+            contador++
+            if (contador%2==0){
+                lista.push(contador)
+                document.querySelector("#pares").innerHTML = lista.join("<br> - ")
+            }
+        }
+    </script>
+</body>
+</html>

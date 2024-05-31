@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/contrato.css">
+</head>
+<body>
+    <div class="demo1">
+        <h2>Preencha os dados</h2>
+        <label for="nome">Nome</label><br>
+        <input type="text" id="nome" placeholder="Digite seu nome" onkeypress="oi()"><br><br>
+
+        <label for="rg">Rg</label><br>
+        <input type="text" id="rg" placeholder="Informe seu rg" onkeypress="oi()"><br><br>
+
+        <label for="cpf">CPF</label><br>
+        <input type="text" id="cpf" placeholder="Informe seu cpf" onkeypress="oi()"><br><br>
+
+        <label for="profissao">Profissão</label><br>
+        <input type="text" id="profissao" placeholder="Informe sua profissão" onkeypress="oi()"><br><br>
+
+        <label for="endereco">Endereço</label><br>
+        <input type="text" id="endereco" placeholder="Informe seu endereço" onkeypress="oi()"><br><br>
+    </div>
+
+    <div class="demo">
+        <h2>Contrato</h2>
+        <p id="ctt">Eu, <span id="nome1"></span>, com o RG, <span id="rg1"></span>, e CPF, <span id="cpf1"></span>, tendo a profissão de <span id="profi"></span> e com o endereço <span id="ende"></span>, estou ciente dos os termos de contrato de estágio que tenho que cumprir todos os</p>
+    </div>
+    
+    <script>
+        function oi(){
+            let nome = document.getElementById("nome").value
+            document.getElementById("nome1").innerHTML = nome
+            let rg = document.getElementById("rg").value
+            document.getElementById("rg1").innerHTML = rg
+            let cpf = document.getElementById("cpf1").value
+            document.getElementById("rg1").innerHTML = cpf
+            let profissao = document.getElementById("profissao").value
+            document.getElementById("profi").innerHTML = profissao
+            let endereco = document.getElementById("endereco").value
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input, button{
+            border-radius: 5px;
+        }
+        #add:hover{
+            background-color: #6bff6b;
+        }
+        #remov:hover{
+            background-color: #ffc66b;
+        }
+        #reset:hover{
+            background-color: #ff6161;
+        }
+    </style>
+</head>
+<body>
+    Lista: <input type="text" id="lista"> <br><br>
+    <button onclick="array(1)" id="add">Adicionar</button>
+    <button onclick="array(2)" id="remov">Remover</button>
+    <button onclick="array(3)" id="reset">Resetar</button>
+    <p id="listado"></p>
+
+    <script src="js/array.js"></script>
+</body>
+</html>
